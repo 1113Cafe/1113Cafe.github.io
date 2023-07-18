@@ -42,7 +42,7 @@ a
     margin: 0 auto;
     padding: 72px 8vw 24px;
     background: #fff;
-    border-radius: 24px;
+    border-radius: 2px;
     background: #fff;
 }
 
@@ -63,6 +63,7 @@ a
     font-weight: 600;
     color: var(--font-color-1);
     margin-bottom: 16px;
+    margin-left: -2px;
     flex: 0 0 100%;
 }
 .nav
