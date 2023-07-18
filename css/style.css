@@ -2,11 +2,11 @@
 
 :root
 {
-    --font-color-0: #04077e;
-    --font-color-1: #000;
-    --font-color-2: #666;
-    --font-color-3: #aaa;
-    --bg-color-1: #eee;
+    --font-color-0: #2b333e;
+    --font-color-1: #2b333e;
+    --font-color-2: #2b333e;
+    --font-color-3: #2b333e;
+    --bg-color-1: #2b333e;
     --line-1: #ccc;
     --line-2: #ddd;
 }
@@ -23,7 +23,7 @@ body
     line-height: 1.75;
     letter-spacing: 0.6px;
     color: var(--font-color-2);
-    background: #111;
+    background: #2b333e;
 }
 a
 {
