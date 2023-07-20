@@ -1,8 +1,11 @@
-const colorBtn = document.getElementById("logo");
-const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
-let currentColorIndex = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  var colorChangeButton = document.getElementById("color-logo");
+  var colors = ["#007bff", "#ff9800", "#4caf50", "#e91e63"]; // 定义你想要的不同颜色
 
-colorBtn.addEventListener("click", () => {
-  currentColorIndex = (currentColorIndex + 1) % colors.length;
-  document.body.style.background = colors[currentColorIndex];
+  var currentColorIndex = 0;
+
+  colorChangeButton.addEventListener("click", function () {
+    document.body.style.backgroundColor = colors[currentColorIndex];
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
+  });
 });
