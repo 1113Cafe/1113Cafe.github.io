@@ -24,26 +24,6 @@
                 
                     <div class="post-header">
     <a class="logo" id="color-logo-small">1113.Cafe</a>
-    <script>
-		document.addEventListener("DOMContentLoaded", function () {
-		var colorChangeButton = document.getElementById("color-logo-small");
-		var colors = ["#5cb3cc","#126e82","#c04851","#2b1216","#5e616d","#2b333e","#2376b7","#223e36","#753117","#ed4845"];
-		var savedColor = localStorage.getItem("selectedColor");
-		var currentColorIndex = Math.floor(Math.random()*10);
-		if (savedColor && colors.includes(savedColor)) {
-			currentColorIndex = colors.indexOf(savedColor);
-			document.documentElement.style.setProperty('--bg-color', savedColor);
-		} else {
-			document.documentElement.style.setProperty('--bg-color', colors[currentColorIndex]);
-		}
-
-		colorChangeButton.addEventListener("click", function () {
-			document.documentElement.style.setProperty('--bg-color', colors[currentColorIndex]);
-			currentColorIndex = (currentColorIndex + 1) % colors.length;
-			localStorage.setItem("selectedColor", colors[currentColorIndex]);
-		});
-		});
-	</script>
     <a class="go-home" href="/">
         <svg width="8" height="14" viewBox="0 0 8 14">
             <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
