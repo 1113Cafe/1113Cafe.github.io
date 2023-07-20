@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var currentColorIndex = 0;
 
   colorChangeButton.addEventListener("click", function () {
-    document.body.style.backgroundColor = colors[currentColorIndex];
+    document.documentElement.style.setProperty('--bg-color', colors[currentColorIndex]);
     currentColorIndex = (currentColorIndex + 1) % colors.length;
   });
 });

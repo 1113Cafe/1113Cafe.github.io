@@ -2,13 +2,15 @@
 
 :root
 {
-    --font-color-0: var(background);
-    --font-color-1: var(background);
-    --font-color-2: var(background);
-    --font-color-3: var(background);
-    --bg-color-1: var(background);
-    --line-1: var(background);
-    --line-2: var(background);
+	--bg-color: #2b333e;
+    --font-color-0: var(--bg-color);
+    --font-color-1: var(--bg-color);
+    --font-color-2: var(--bg-color);
+    --font-color-3: var(--bg-color);
+    --bg-color-1: var(--bg-color);
+    --line-1: var(--bg-color);
+    --line-2: var(--bg-color);
+    
 }
 p
 {
@@ -22,8 +24,8 @@ body
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.6px;
-    color: var(background);
-    background: #2b333e;
+    color: var(--bg-color);
+    background: var(--bg-color);
 }
 a
 {
