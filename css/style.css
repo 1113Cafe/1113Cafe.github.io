@@ -349,3 +349,5 @@ a
     color: var(--font-color-0);
     transition: color ease-in-out .5s;
 }
+
+*{webkit-tap-highlight-color:transparent;}
