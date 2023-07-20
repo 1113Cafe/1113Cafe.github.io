@@ -27,9 +27,9 @@
     <script>
 		document.addEventListener("DOMContentLoaded", function () {
 		var colorChangeButton = document.getElementById("color-logo");
-		var colors = ["#5cb3cc","#126e82","#c04851","#2b1216","#5e616d","#2b333e","#2376b7","#223e36","#f2ce2b","#553b18","#753117","#ed4845","#5d3131"];
+		var colors = ["#5cb3cc","#126e82","#c04851","#2b1216","#5e616d","#2b333e","#2376b7","#223e36","#753117","#ed4845"];
 		var savedColor = localStorage.getItem("selectedColor");
-		var currentColorIndex = localStorage.getItem("currentColor");
+		var currentColorIndex = Math.floor(Math.random()*10);
 		if (savedColor && colors.includes(savedColor)) {
 			currentColorIndex = colors.indexOf(savedColor);
 			document.documentElement.style.setProperty('--bg-color', savedColor);
@@ -41,7 +41,6 @@
 			document.documentElement.style.setProperty('--bg-color', colors[currentColorIndex]);
 			currentColorIndex = (currentColorIndex + 1) % colors.length;
 			localStorage.setItem("selectedColor", colors[currentColorIndex]);
-			localStorage.setItem("currentColor", currentColorIndex);
 		});
 		});
 	</script>
