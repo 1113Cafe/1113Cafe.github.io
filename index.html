@@ -30,7 +30,7 @@
 		var colors = ["#5cb3cc","#126e82","#c04851","#2b1216","#5e616d","#2b333e","#2376b7","#223e36","#f2ce2b","#553b18","#753117","#ed4845","#5d3131"];
 		var currentColorIndex = 0;
 		var savedColor = localStorage.getItem("selectedColor");
-		if (savedColor && colors.includes(savedColor)) {
+		if (colors.includes(savedColor)) {
 			currentColorIndex = colors.indexOf(savedColor);
 			document.documentElement.style.setProperty('--bg-color', savedColor);
 		} else {
