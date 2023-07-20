@@ -26,6 +26,7 @@ body
     letter-spacing: 0.6px;
     color: var(--bg-color);
     background: var(--bg-color);
+    transition: background 1s ease;
 }
 a
 {
